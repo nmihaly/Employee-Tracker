@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS tracker;
-CREATE DATABASE tracker;
-USE tracker;
+DROP DATABASE IF EXISTS tracker_DB;
+CREATE DATABASE tracker_DB;
+USE tracker_DB;

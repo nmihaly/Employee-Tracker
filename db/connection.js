@@ -6,7 +6,13 @@ const db = mysql.createConnection({
   user: 'root',
   // Your MySQL password
   password: 'Chargers21',
-  database: 'tracker'
+  database: 'tracker_DB'
 });
+db.promise().query("SELECT 1")
+  .then( ([rows,fields]) => {
+    console.log(rows);
+  })
+  .catch(console.log)
+  .then( () => db.end());
 
 module.exports = db;

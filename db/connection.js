@@ -8,11 +8,5 @@ const db = mysql.createConnection({
   password: 'Chargers21',
   database: 'tracker_DB'
 });
-db.promise().query("SELECT 1")
-  .then( ([rows,fields]) => {
-    console.log(rows);
-  })
-  .catch(console.log)
-  .then( () => db.end());
 
 module.exports = db;
